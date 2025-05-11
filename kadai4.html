@@ -37,6 +37,9 @@
 
                     // 配列の内容を項目毎に出力
                     // 課題4-1. ここにコードを書く
+                    list.forEach(item => {
+                        console.log(`id: ${item.id}, name: ${item.name}, ${item.price}円, 残り${item.stock}個`);
+                    });
                     console.log(""); // 空行の出力
                 }
                 
@@ -45,6 +48,8 @@
                     if (this.stock >= 1) { 
                         console.log("商品番号: "+this.id+", 商品名: "+this.name+"を購入します。");
                         // 課題4-2. ここにコードを書く
+                        
+
                         // 購入による商品の在庫削減処理
                         
                         // 課題4-3. ここにコードを書く
